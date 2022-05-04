@@ -30,4 +30,6 @@ fetch("https://pokeapi.co/api/v2/pokemon?limit=50&offset=3")
     }).forEach(pokeListing => {
         ul === null || ul === void 0 ? void 0 : ul.append(pokeListing);
     });
+    const spinner = document.querySelector(".spinner");
+    spinner === null || spinner === void 0 ? void 0 : spinner.classList.add("hidden");
 });
