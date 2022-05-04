@@ -1,0 +1,99 @@
+@import "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap";
+@import "http://fonts.cdnfonts.com/css/pokemon-solid";
+* {
+  text-align: center;
+}
+
+body {
+  background-color: #847e26;
+  background-image: url("https://external-preview.redd.it/tjqh5TgG2eSNOiGbfq7gMpiS04yB4zJ0tyvrW0RWSYU.png?auto=webp&s=8ada20e13273b9d5300696adcba4397517766b9a");
+  background-repeat: no-repeat;
+}
+
+a {
+  color: #feca1b;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #feca1b;
+}
+
+h1 {
+  margin: 50px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 28px;
+}
+
+h1 > a {
+  color: #feca1b;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #3761a8;
+  font-family: Pokemon Solid, sans-serif;
+  font-size: 72px;
+  text-decoration: none;
+}
+
+h1 > a:visited {
+  color: #feca1b;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #3761a8;
+}
+
+.spinner {
+  width: 65px;
+  margin-left: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.pokemon {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+
+.pokemon-details {
+  justify-content: center;
+  display: inline-block;
+}
+
+figure {
+  width: 300px;
+  background-color: #3761a8;
+  border-radius: 25px;
+  margin: 50px;
+  padding: 50px;
+}
+
+figcaption {
+  color: #feca1b;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+li {
+  margin: 25px;
+  list-style: none;
+}
+
+.ability-name {
+  color: red;
+  font-weight: 600;
+}
+
+img {
+  width: 150px;
+  padding: 5px 25px 35px;
+}
+
+main {
+  font-family: "Press Start 2P", cursive;
+}
+
+/*# sourceMappingURL=index.4a5519d3.css.map */

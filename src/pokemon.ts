@@ -1,7 +1,15 @@
 import _ from "lodash"
+import { createPokemonDetails } from "./functions"
 const url = new URL(`${window.location}`)
 const queryString = new URLSearchParams(url.search)
 const main = document.querySelector("main")
+
+interface Abilities {
+    ability: {
+        name: string;
+        url: string;
+    }
+}
 
 fetch(`https://pokeapi.co/api/v2/pokemon/${queryString.get("pokemon")}`)
     .then(response => response.json())
@@ -11,28 +19,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${queryString.get("pokemon")}`)
         if (title) {
             title.textContent = name
         }
-        const pokemonDetails = document.createElement("div")
-        pokemonDetails.classList.add("pokemon-details")
-        pokemonDetails.innerHTML = `
-            <figure>
-                <img src="${pokemon.sprites.front_shiny}" alt="${name}" />
-                <figcaption>${name}</figcaption>
-            </figure>
-
-            <h2>Abilities</h2>
-        `;
-
-        interface Ability {
-            name: string;
-            url: string;
-        }
-
-        interface Abilities {
-            ability: Ability;
-        }
-
-
-        main?.append(pokemonDetails);
+        main?.append(createPokemonDetails(pokemon, name));
         const abilitiesRequests = pokemon.abilities
             .map((pokemon: Abilities) => pokemon.ability.url)
             .map((url: string) => {
@@ -54,5 +41,5 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${queryString.get("pokemon")}`)
             ul.append(li)
         })
         const spinner = document.querySelector(".spinner")
-        spinner.classList.add("hidden")
+        spinner?.classList.add("hidden")
     })

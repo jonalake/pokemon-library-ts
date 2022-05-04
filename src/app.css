@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+body {
+  background-image: url(https://external-preview.redd.it/tjqh5TgG2eSNOiGbfq7gMpiS04yB4zJ0tyvrW0RWSYU.png?auto=webp&s=8ada20e13273b9d5300696adcba4397517766b9a);
+  background-repeat: no-repeat;
+  background-color: #847e26;
+}
+
 a {
   color: #feca1b;
   text-decoration: none;
@@ -14,18 +20,27 @@ a:visited {
   color: #feca1b;
 }
 
+h1 {
+  margin: 50px;
+}
+
+h2 {
+  font-size: 28px;
+  color: white;
+}
+
 h1>a {
   font-family: 'Pokemon Solid', sans-serif;
   text-decoration: none;
   font-size: 72px;
   color: #feca1b;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #3761a8;
 }
 
 h1>a:visited {
   color: #feca1b;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #3761a8;
 }
 
@@ -54,7 +69,7 @@ figure {
   background-color: #3761a8;
   padding: 50px;
   border-radius: 25px;
-
+  margin: 50px;
 }
 
 figcaption {
@@ -65,7 +80,7 @@ figcaption {
 
 li {
   list-style: none;
-  margin: 10px;
+  margin: 25px;
 }
 
 .ability-name {
@@ -77,6 +92,7 @@ img {
   padding: 25px;
   padding-top: 5px;
   padding-bottom: 35px;
+  width: 150px;
 }
 
 main {

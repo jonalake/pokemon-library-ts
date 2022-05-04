@@ -1,0 +1,125 @@
+@import "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap";
+@import "http://fonts.cdnfonts.com/css/pokemon-solid";
+* {
+  text-align: center;
+}
+
+body {
+  text-align: center;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin: 25px;
+}
+
+h1 > a {
+  color: #feca1b;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #3761a8;
+  font-family: Pokemon Solid, sans-serif;
+  font-size: 72px;
+  text-decoration: none;
+}
+
+h1 > a:visited {
+  color: #feca1b;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #3761a8;
+}
+
+ul {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.card {
+  width: 560px;
+  height: 760px;
+  background-color: #feca1b;
+  border-radius: 25px;
+  justify-content: center;
+  margin: 50px;
+  display: flex;
+}
+
+.pokemon-details {
+  width: 510px;
+  height: 710px;
+  background-color: #00bfff;
+  flex-direction: column;
+  justify-content: left;
+  align-self: center;
+  display: flex;
+}
+
+figure {
+  width: 450px;
+  height: 325px;
+  background-color: #fff;
+  background-image: url("https://www.pokemonaaah.net/wp-content/uploads/2021/05/vol_007_sg043_6056359621_o.jpg");
+  border: 10px outset #feca1b;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  margin-bottom: 25px;
+  display: flex;
+  box-shadow: 5px 5px 10px #4b4b4b;
+}
+
+.text {
+  width: 95%;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  align-self: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ability-name {
+  margin: 20px;
+  font-family: Gill Sans mt, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  font-stretch: semi-condensed;
+}
+
+.ability-short-description {
+  font-family: Gill Sans, sans-serif;
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+img {
+  width: 350px;
+  height: 350px;
+  -webkit-filter: drop-shadow(2px 2px 15px #fff);
+  filter: drop-shadow(2px 2px 15px #fff);
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  -webkit-filter: none;
+  filter: none;
+  padding-top: 10px;
+  padding-left: 190px;
+  display: flex;
+}
+
+h2 {
+  align-self: flex-start;
+  padding: 10px 10px 5px 20px;
+  font-family: Gill Sans mt, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=pokemon.79467918.css.map */

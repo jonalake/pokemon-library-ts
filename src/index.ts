@@ -23,7 +23,7 @@ fetch("https://pokeapi.co/api/v2/pokemon?limit=50&offset=3")
       pokemonListing.innerHTML = `
         <figure>
           <img src="${response.sprites.front_shiny}" alt="${name}" />
-          <figcaption><a href="src/pokemon.html?pokemon=${response.id}">${name}</a></figcaption>
+          <figcaption><a href="pokemon.html?pokemon=${response.id}">${name}</a></figcaption>
         </figure>
       `
       return pokemonListing

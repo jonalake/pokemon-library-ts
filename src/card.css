@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+* {
+    text-align: center;
+}
+
+body {
+    display: inline-block;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 25px;
+}
+
+h1 > a {
+    font-family: 'Pokemon Solid', sans-serif;
+    text-decoration: none;
+    font-size: 72px;
+    color: #feca1b;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #3761a8;
+}
+
+h1 > a:visited {
+    color: #feca1b;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #3761a8;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    width: 560px;
+    height: 760px;
+    background-color: #feca1b;
+    border-radius: 25px;
+}
+
+.pokemon-details {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: left;
+    width: 510px;
+    height: 710px;
+    background-color: deepskyblue;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 325px;
+    background-color: white;
+    background-image: url(https://www.pokemonaaah.net/wp-content/uploads/2021/05/vol_007_sg043_6056359621_o.jpg);
+    border: 10px outset #feca1b;
+    box-shadow: 5px 5px 10px rgb(75, 75, 75);
+    margin-bottom: 25px;
+}
+
+.text{
+    align-self: center;
+    width: 95%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ability-name {
+    margin: 20px;
+    font-family: 'Gill Sans mt', sans-serif; 
+    font-size: 25px;
+    font-weight: 600;
+    font-stretch: semi-condensed;
+}
+
+.ability-short-description {
+    font-family: 'Gill Sans', sans-serif;
+}
+
+li {
+    padding-bottom: 5px;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    -webkit-filter: drop-shadow(2px 2px 15px white);
+    filter: drop-shadow(2px 2px 15px white);
+}
+
+.spinner {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    padding-left: 190px;
+    -webkit-filter: none;
+    filter: none;
+}
+
+h2 {
+    padding: 10px 10px 5px 20px;
+    align-self: flex-start;
+    font-family: 'Gill Sans mt', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
