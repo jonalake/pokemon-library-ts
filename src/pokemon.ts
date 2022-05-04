@@ -1,15 +1,10 @@
 import _ from "lodash"
-import { createPokemonDetails } from "./functions"
+import { createAbilitiesRequest, createPokemonDetails } from "./functions"
 const url = new URL(`${window.location}`)
 const queryString = new URLSearchParams(url.search)
 const main = document.querySelector("main")
 
-interface Abilities {
-    ability: {
-        name: string;
-        url: string;
-    }
-}
+
 
 fetch(`https://pokeapi.co/api/v2/pokemon/${queryString.get("pokemon")}`)
     .then(response => response.json())
@@ -20,8 +15,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${queryString.get("pokemon")}`)
             title.textContent = name
         }
         main?.append(createPokemonDetails(pokemon, name));
-        const abilitiesRequests = pokemon.abilities
-            .map((pokemon: Abilities) => pokemon.ability.url)
+        const abilitiesRequests = createAbilitiesRequest(pokemon)
             .map((url: string) => {
                 return fetch(url).then(response => response.json())
             })

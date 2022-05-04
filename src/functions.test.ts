@@ -1,13 +1,18 @@
-import { createPokemonDetails } from "./functions";
+import { createAbilitiesRequest } from "./functions";
 
-const name = "Bulbasaur"
 const pokemon = {
+  abilities: [{
+    ability: {
+      name: "limber",
+      url: "https://pokeapi.co/api/v2/ability/7/",
+    }
+  }],
   sprites: {
-    front_shiny: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png"
+    front_shiny: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png",
   }
 }
 
 test("Returns Something", () => {
-  expect(createPokemonDetails(pokemon, name)).toBeDefined();
+  expect(createAbilitiesRequest(pokemon)).toEqual(["https://pokeapi.co/api/v2/ability/7/"]);
 });
 

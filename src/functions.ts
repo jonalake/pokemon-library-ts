@@ -1,7 +1,14 @@
+interface Abilities {
+  ability: {
+    name: string;
+    url: string;
+  }
+}
 interface Pokemon {
   sprites: {
     front_shiny: string;
   }
+  abilities: Abilities[]
 }
 
 export function createPokemonDetails(pokemon: Pokemon, name: string) {
@@ -17,3 +24,9 @@ export function createPokemonDetails(pokemon: Pokemon, name: string) {
         `;
   return pokemonDetails
 }
+
+
+export function createAbilitiesRequest(pokemon: Pokemon) {
+  return pokemon.abilities.map((pokemon) => pokemon.ability.url)
+}
+
