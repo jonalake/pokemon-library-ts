@@ -1,4 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const lodash_1 = __importDefault(require("lodash"));
 const ul = document.querySelector("ul");
 fetch("https://pokeapi.co/api/v2/pokemon?limit=50&offset=3")
     .then(response => response.json())
@@ -14,11 +19,11 @@ fetch("https://pokeapi.co/api/v2/pokemon?limit=50&offset=3")
     responses.map(response => {
         const pokemonListing = document.createElement("div");
         pokemonListing.classList.add("pokemon-listing");
-        const name = `${_.capitalize(response.species.name)}`;
+        const name = `${lodash_1.default.capitalize(response.species.name)}`;
         pokemonListing.innerHTML = `
         <figure>
           <img src="${response.sprites.front_shiny}" alt="${name}" />
-          <figcaption><a href="pokemon.html?pokemon=${response.id}">${name}</a></figcaption>
+          <figcaption><a href="src/pokemon.html?pokemon=${response.id}">${name}</a></figcaption>
         </figure>
       `;
         return pokemonListing;
